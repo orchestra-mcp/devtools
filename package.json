@@ -1,7 +1,7 @@
 {
   "name": "@orchestra-mcp/devtools",
-  "version": "0.2.0",
-  "description": "Developer tools components for Orchestra MCP — terminal, debugger",
+  "version": "1.0.0",
+  "description": "Developer tools components for Orchestra MCP \u2014 terminal, debugger",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -13,8 +13,12 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
-  "publishConfig": { "access": "public" },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/orchestra-mcp/devtools"
@@ -22,7 +26,9 @@
   "funding": "https://github.com/sponsors/fadymondy",
   "license": "MIT",
   "dependencies": {
-    "@orchestra-mcp/editor": "^0.2.0", "@orchestra-mcp/icons": "^0.2.0", "@orchestra-mcp/ui": "^0.2.0",
+    "@orchestra-mcp/editor": "^1.0.0",
+    "@orchestra-mcp/icons": "^1.0.0",
+    "@orchestra-mcp/ui": "^1.0.0",
     "@xterm/xterm": "^5.5.0",
     "@xterm/addon-fit": "^0.10.0"
   },
@@ -41,5 +47,11 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "prepublishOnly": "pnpm build"
   },
-  "keywords": ["orchestra", "mcp", "react", "components", "devtools"]
+  "keywords": [
+    "orchestra",
+    "mcp",
+    "react",
+    "components",
+    "devtools"
+  ]
 }
